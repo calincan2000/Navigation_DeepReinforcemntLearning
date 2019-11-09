@@ -39,8 +39,6 @@ The task is episodic, and in order to solve the environment, an agent must get a
 
 To train the agent run all the cells in [Report.ipynb](Report.ipynb) notebook.
 
-Description of the implementation is provided in [report.md](report.md). 
-For technical details see the code in the notebook.
 
 
 ---
