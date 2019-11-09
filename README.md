@@ -6,14 +6,7 @@ in a large, square world more details [DQN paper](https://storage.googleapis.com
 
 
 
-## Screenshot
-
-
-
-
-## Loss
-
-
+![agent navigating (and collect bananas!) in a large, square world environment](https://github.com/calincan2000/Navigation_DeepReinforcemntLearning/blob/master/banana.gif)
 
 
 ---
