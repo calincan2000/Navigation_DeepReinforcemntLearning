@@ -37,12 +37,11 @@ The task is episodic, and in order to solve the environment, an agent must get a
 
 ### Instructions
 
-To train the agent run all the cells in [Navigation_DQN.ipynb](Navigation_DQN.ipynb) notebook.
+To train the agent run all the cells in [Report.ipynb](Report.ipynb) notebook.
 
 Description of the implementation is provided in [report.md](report.md). 
 For technical details see the code in the notebook.
 
-Model weights are stored in [dqn.pth](dqn.pth)
 
 ---
 
