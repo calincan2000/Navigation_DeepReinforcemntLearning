@@ -1,6 +1,4 @@
 # Navigation_DeepReinforcemntLearning DQN implementation
-============
-
 Navigation_DeepReinforcemntLearning is a Deep Q-Network (DQN) which train an agent to navigate (and collect bananas!) 
 in a large, square world more details [DQN paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 
