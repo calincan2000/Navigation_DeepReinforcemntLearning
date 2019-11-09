@@ -71,12 +71,5 @@ Environement is considered solved if average of 100 episodes is more than 13.
 
 Running a script is not a problem. Just execute it in sequential order.
 
----
-
-## License
-You can check out the full license in the LICENSE file.
-
-This project is licensed under the terms of the **MIT** license.
-
 
 
