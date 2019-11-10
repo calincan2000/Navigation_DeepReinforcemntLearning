@@ -35,28 +35,11 @@ The task is episodic, and in order to solve the environment, an agent must get a
 
 3. Run all the cells in [Navigation.ipynb](Navigation.ipynb) to test the environment.
 
-### Instructions
-
+### Train the agent
+    
 To train the agent run all the cells in [Report.ipynb](Report.ipynb) notebook.
-
-
+For more information on how to run the environment please read the Dependencies section in this [repo](https://github.com/udacity/deep-reinforcement-learning#dependencies).
 
 ---
-
-# Usage
-
-You will train an agent to collect bananas in a large, square world.  
-
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
-
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
-- **`0`** - move forward.
-- **`1`** - move backward.
-- **`2`** - turn left.
-- **`3`** - turn right.
-Environement is considered solved if average of 100 episodes is more than 13.
-
-Running a script is not a problem. Just execute it in sequential order.
-
 
 
