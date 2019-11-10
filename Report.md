@@ -104,7 +104,7 @@ print('States have length:', state_size)
     States have length: 37
 
 
-### 3. initialize the game agent
+### 3. Initialize the game agent
 
 
 
@@ -114,7 +114,47 @@ agent = Agent(state_size=state_size, action_size=action_size, seed=0)
 output_file_name="double_dueling_agent.pth" # file name under which the weights will be saved
 ```
 
-### 4. Train the Agent with DQN
+### 4. Train the Agent with DQN 
+
+### 4.1 Chosen hyperparameters:
+
+Below can be seen the chosen heperparameters used for training the DQN reinforcement learning algorithms in dqn_agent.py file :
+
+BUFFER_SIZE = int(1e5)  # replay buffer size
+BATCH_SIZE = 64         # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR = 5e-4               # learning rate 
+UPDATE_EVERY = 4        # how often to update the 
+
+### 4.2 Learning algorithm:
+A neural network which consists of 3  Linear layers responsible for an agent behaviour which can be found in model.py file:
+
+class QNetwork(nn.Module):
+    """Actor (Policy) Model."""
+
+    def __init__(self, state_size, action_size, seed, fc1_units=64, fc2_units=64):
+        """Initialize parameters and build model.
+        Params
+        ======
+            state_size (int): Dimension of each state
+            action_size (int): Dimension of each action
+            seed (int): Random seed
+            fc1_units (int): Number of nodes in first hidden layer
+            fc2_units (int): Number of nodes in second hidden layer
+        """
+        super(QNetwork, self).__init__()
+        self.seed = torch.manual_seed(seed)
+        self.fc1 = nn.Linear(state_size, fc1_units)
+        self.fc2 = nn.Linear(fc1_units, fc2_units)
+        self.fc3 = nn.Linear(fc2_units, action_size)
+
+    def forward(self, state):
+        """Build a network that maps state -> action values."""
+        x = F.relu(self.fc1(state))
+        x = F.relu(self.fc2(x))
+        return self.fc3(x)
+### 4.3 Deep Q-Learning Algorithm:
 
 
 ```python
@@ -221,3 +261,16 @@ env.close()
 
     Single episode agent score after training: 10.0
 
+
+
+### 6.  Future steps
+For improving the agent's performance. There are many possible improvements to this algorithm like:  
+	* Double DQN,
+    * Dueling DQN,
+    * Prioritized Experience Replay,
+    * Rainbow,
+
+
+```python
+
+```
