@@ -120,12 +120,12 @@ output_file_name="double_dueling_agent.pth" # file name under which the weights 
 
 Below can be seen the chosen heperparameters used for training the DQN reinforcement learning algorithms in dqn_agent.py file :
 
-BUFFER_SIZE = int(1e5)  # replay buffer size
-BATCH_SIZE = 64         # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR = 5e-4               # learning rate 
-UPDATE_EVERY = 4        # how often to update the 
+BUFFER_SIZE = int(1e5)  # replay buffer size  <br>
+BATCH_SIZE = 64         # minibatch size<br>
+GAMMA = 0.99            # discount factor<br>
+TAU = 1e-3              # for soft update of target parameters<br>
+LR = 5e-4               # learning rate<br>
+UPDATE_EVERY = 4        # how often to update the <br>
 
 ### 4.2 Learning algorithm:
 A neural network which consists of 3  Linear layers responsible for an agent behaviour which can be found in model.py file:
